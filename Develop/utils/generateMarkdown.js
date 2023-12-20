@@ -24,7 +24,6 @@ function renderLicenseSection(license) {
   if(license !== 'None'){
     return `## License
     This project is licensed under the ${license} license.` 
-    // Learn more about this license [here](${licenseURL}).
   } else {
     return '';
   }
@@ -33,54 +32,40 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.projectName}
+  ${renderLicenseBadge(data.license)}
   
-    ${renderLicenseBadge(data.license)}
-
-    ## Description
-
-    ${data.description}
-
-    ## Table of Contents
-    * [Installation](#installation)
-
-    ## Installation
-    ${data.installation}
- 
-`
+  ## Description
+  ${data.description}
+  
+  ## Table of Contents
+  
+  * [Installation](#installation)
+  * [Usage](#usage)
+  ${renderLicenseLink(data.license)}
+  * [Contributors](#contributors)
+  * [Tests](#tests)
+  * [FAQ](#faq)
+  
+  
+  ## Installation
+  ${data.installation}
+  
+  ## Usage
+  ${data.usage}
+  
+  ${renderLicenseSection(data.license)}
+  
+  ## Contributors
+  ${data.contributors}
+  
+  ## Tests
+  ${data.tests}
+  
+  ## FAQ
+  ${data.questions}
+  For additional questions please contact me at: <${data.emailAddress}>
+  Github: [${data.gitUserName}](https://www.github.com/${data.gitUserName}/)`
 ;
 }
 
 module.exports = generateMarkdown;
-
-
-// ## Description
-// ${data.description}
-
-// ## Table of Contents
-
-// * [Installation](#installation)
-// * [Usage](#usage)
-// ${renderLicenseLink(data.license)}
-// * [Contributors](#contributors)
-// * [Tests](#tests)
-// * [FAQ](#faq)
-
-
-// ## Installation
-// ${data.installation}
-
-// ## Usage
-// ${data.usage}
-
-// ${renderLicenseSection(data.license)}
-
-// ## Contributors
-// ${data.contributors}
-
-// ## Tests
-// ${data.tests}
-
-// ## FAQ
-// ${data.questions}
-// For additional questions please contact me at: <${data.emailAddress}>
-// Github: [${data.gitUserName}](https://www.github.com/${data.gitUserName}/)

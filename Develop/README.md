@@ -1,13 +1,34 @@
-# hbsaijbs
-    <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg">
-
-    ## Description
-
-    josh
-
-    ## Table of Contents
-    * [Installation](#installation)
-
-    ## Installation
-    jhsd
- 
+# Readme Generator
+  
+  
+  ## Description
+  Generates a readme
+  
+  ## Table of Contents
+  
+  * [Installation](#installation)
+  * [Usage](#usage)
+  
+  * [Contributors](#contributors)
+  * [Tests](#tests)
+  * [FAQ](#faq)
+  
+  
+  ## Installation
+  Install
+  
+  ## Usage
+  Usage
+  
+  
+  
+  ## Contributors
+  N/A
+  
+  ## Tests
+  No Testing
+  
+  ## FAQ
+  No FAQ
+  For additional questions please contact me at: <Email@email.com>
+  Github: [GitUser](https://www.github.com/GitUser/)
