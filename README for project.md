@@ -4,6 +4,8 @@
   ## Description
   This is a project that takes in user inputs from the command line and returns a formatted Readme.md file.
   
+  ![CLI IMG](./images/image.png)
+
   ## Table of Contents
   
   * [Installation](#installation)
