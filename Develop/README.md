@@ -2,7 +2,7 @@
   
   
   ## Description
-  Generates a readme
+  Generates a readme - this is sample output
   
   ## Table of Contents
   
